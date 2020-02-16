@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <Button mnemonicParsing="false" onAction="#ButtonDelete" prefHeight="45.0" prefWidth="117.0" text="Delete Selected" translateX="2.0" translateY="130.0" />
+    <ListView fx:id="employeeListView" prefWidth="248.0" />
+
+
+    <VBox>
+
+            <HBox>
+                <Label prefWidth=" 100" text="First Name">
+            <font>
+               <Font name="Al Bayan Plain" size="18.0" />
+            </font></Label>
+                <TextField fx:id="firstNameTextField" minHeight="30.0" prefWidth="150.0">
+            <padding>
+               <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </padding></TextField>
+            </HBox>
+
+            <HBox>
+                <Label lineSpacing="2.0" prefWidth="100" text="Last Name">
+            <font>
+               <Font size="18.0" />
+            </font>
+            <padding>
+               <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </padding></Label>
+                <TextField fx:id="lastNameTextField" minHeight="30.0" prefWidth="150" />
+            </HBox>
+
+            <HBox>
+                <Label lineSpacing="7.0" prefWidth="100" text="Is Active">
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+                <CheckBox fx:id="isActiveCheckBox" lineSpacing="2.0">
+            <padding>
+               <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding></CheckBox>
+            </HBox>
+
+        <ToolBar prefWidth="150">
+            <Button onAction="#clear" prefHeight="35.0" prefWidth="114.0" text="clear">
+            <font>
+               <Font size="15.0" />
+            </font></Button>
+
+            <Button onAction="#newadd" prefHeight="36.0" prefWidth="114.0" text="add new">
+            <font>
+               <Font size="15.0" />
+            </font></Button>
+        </ToolBar>
+
+    </VBox>
+</HBox>
